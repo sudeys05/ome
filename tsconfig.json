@@ -6,13 +6,13 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": false,
+    "strict": false,                   // You can switch to true later for stricter checks
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,                   // Set to false so TS actually outputs files
     "jsx": "react-jsx",
     "declaration": false,
     "outDir": "./dist",
@@ -29,7 +29,7 @@
     "client/src/**/*",
     "shared/**/*",
     "server/**/*"
-, "custom-types.d.ts"  ],
+  ],
   "exclude": [
     "node_modules",
     "dist",
