@@ -177,7 +177,6 @@ async function startServer() {
       try {
         // Import and initialize seeding functions
         console.log('🌱 Seeding sample geofiles...');
-        const { seedGeofiles } = await import('./seed-geofiles.js');
         await seedGeofiles();
 
         // Seed admin user for login
